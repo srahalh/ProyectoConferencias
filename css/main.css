@@ -1,0 +1,1405 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2::after {
+    content: '';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    width: 10rem;
+    height: 3rem;
+    display: block;
+}
+
+h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.4rem;
+    color: #fe4918;
+    margin: 0;
+}
+
+.button.hollow,
+.button.hollow:hover {
+    background-color: white;
+    color: #fe4918;
+    border: 1px solid #fe4918;
+    max-width: 95%;
+}
+
+.button.transparente {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.button.transparente:hover {
+    border: 2px solid #fe4918;
+    background-color: #fe4918;
+}
+
+.button {
+    display: block;
+    background-color: #fe4918;
+    padding: 1rem 4rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 95%;
+    margin: 0 auto;
+    transition: all .3s ease;
+}
+
+@media (min-width: 768px) {
+    .button {
+        display: inline-block;
+        font-size: 1.8rem;
+    }
+    .float-right {
+        float: right;
+    }
+}
+
+.button:hover {
+    background-color: #e33000;
+}
+
+.contenedor {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.seccion {
+    padding: 3rem 0;
+}
+
+@media (min-width: 480px) {
+    .contenedor {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Lettering*/
+
+h1.nombre-sitio span {
+    position: relative;
+    text-shadow: 0 0 3rem black;
+}
+
+
+/*Header*/
+
+div.hero {
+    background-image: url(../img/encabezado.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+div.contenido-header {
+    padding-top: 4rem;
+}
+
+nav.redes-sociales {
+    text-align: center;
+}
+
+nav.redes-sociales a {
+    color: white;
+    font-size: 3rem;
+    margin-right: 2rem;
+}
+
+nav.redes-sociales a:last-of-type {
+    margin-right: 0;
+}
+
+.informacion-evento {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    margin: 4rem auto;
+    margin-bottom: 0;
+    width: 95%;
+}
+
+.informacion-evento p {
+    margin: 0;
+    display: inline;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.informacion-evento p i {
+    color: #fe4918;
+    font-size: 2.4rem;
+}
+
+.logo {
+    color: white;
+    text-align: center;
+}
+
+h1.nombre-sitio {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 5.9vw;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    h1.nombre-sitio {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 10vw;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 1;
+    }
+}
+
+p.slogan {
+    text-transform: none!important;
+    font-size: 1.5rem;
+}
+
+p.slogan span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    p.slogan {
+        font-size: 3rem;
+    }
+    p.slogan span {
+        font-size: 3rem;
+    }
+}
+
+
+/*Navegacion principal*/
+
+.barra {
+    position: sticky;
+    /*Permite el desplazamiento de la barra cuando se hace scroll*/
+    top: 0;
+    z-index: 1001;
+    background-color: #353535;
+    padding: 2rem;
+}
+
+
+/* .fixed {
+    /*Esto es para fijar la barra cuando se hace scroll con jquery
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+} */
+
+.posicion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 768px) {
+    .logotipo {
+        flex: 0 0 33.3%;
+    }
+}
+
+.logotipo img {
+    max-width: 100%;
+}
+
+.menu-movil i {
+    color: white;
+    font-size: 3rem;
+}
+
+.navegacion-principal {
+    display: none;
+}
+
+.navegacion-movil {
+    display: none;
+}
+
+.navegacion-principal a,
+.navegacion-movil a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border: 4px solid white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.navegacion-movil a {
+    margin-top: 1rem;
+}
+
+@media (min-width: 1120px) {
+    .menu-movil,
+    .navegacion-movil {
+        display: none!important;
+    }
+    .navegacion-principal {
+        display: block;
+        text-align: right;
+    }
+    .navegacion-principal a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        border: 4px solid white;
+        padding: 2rem;
+        margin: 1rem 2rem 1rem 0;
+        transition: all 1s ease;
+    }
+    .navegacion-principal a:last-of-type {
+        border: 4px solid #fe4918;
+    }
+    .navegacion-principal a:hover {
+        border: 4px solid #fe4918;
+        background-color: #fe4918;
+    }
+}
+
+
+/*Seccion */
+
+.seccion p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+
+/*talleres/programa evento*/
+
+.programa {
+    position: relative;
+}
+
+.contenedor-video {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.contenido-programa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.programa-evento {
+    background-color: rgba(255, 255, 255, .8);
+    padding: 1.5rem;
+    margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+    .programa-evento {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .programa-evento {
+        width: 50%;
+    }
+}
+
+.ocultar {
+    display: none;
+}
+
+.activa {
+    border: none;
+    border-bottom: 4px solid #fe4918;
+}
+
+.menu-programa {
+    max-width: 100%;
+    border-bottom: 1px solid #fe4918;
+    /* padding-bottom: 1rem; */
+}
+
+.menu-programa a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.menu-programa a.activo::after {
+    /*Añadiendo clase activo en after*/
+    content: '';
+    position: absolute;
+    /*Para centrar elementos en posicion relativa y absoluta*/
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2rem;
+    width: 3rem;
+    background-image: url(../img/talleres-flecha.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    bottom: -4rem;
+}
+
+.menu-programa a i {
+    color: #fe4918;
+    font-size: 3rem;
+}
+
+@media (min-width: 992px) {
+    .menu-programa {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-programa a:last-of-type {
+        margin-right: 0;
+    }
+}
+
+
+/*Detalle evento*/
+
+.detalle-evento {
+    margin-top: 2rem;
+    border-bottom: 1px solid black;
+    padding: 2rem;
+}
+
+.detalle-evento:last-of-type {
+    border-bottom: none;
+}
+
+.detalle-evento p i {
+    color: #fe4918;
+    font-size: 2.4rem;
+}
+
+
+/*Invitados*/
+
+.lista-invitados {
+    padding: 1rem;
+}
+
+.lista-invitados {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+}
+
+.lista-invitados li {
+    text-align: center;
+}
+
+.lista-invitados li img {
+    max-width: 100%;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .lista-invitados {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .lista-invitados {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.invitado {
+    position: relative;
+    overflow: hidden;
+}
+
+.invitado img {
+    filter: gray;
+    -webkit-filter: grayscale(1);
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.invitado:hover img {
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.1);
+}
+
+.invitado p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Oswald', sans-serif!important;
+    text-transform: uppercase;
+    color: #fe4918;
+    background-color: rgba(0, 0, 0, .55);
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.invitado:hover p {
+    bottom: -8rem;
+    /*Para el efecto de transicion*/
+    opacity: 0;
+}
+
+
+/*Contador*/
+
+.parallax::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(.6);
+    /*Truco del parallax (Los before y after se usan para que no afecte el filtro al texto)*/
+}
+
+.contador {
+    position: relative;
+    height: auto;
+}
+
+.contador::before {
+    content: '';
+    background-image: url(../img/bg-resumen.jpg);
+}
+
+.resumen-evento {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.resumen-evento li {
+    flex: 0 0 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+    .resumen-evento li {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .resumen-evento li {
+        flex: 0 0 25%;
+    }
+}
+
+.resumen-evento li {
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Oswald', sans-serif!important;
+    text-transform: uppercase;
+}
+
+.resumen-evento li p {
+    margin: 0;
+}
+
+.numero {
+    color: #fe4918;
+    font-size: 10rem;
+    font-family: 'Oswald', sans-serif!important;
+}
+
+
+/*Tabla de precios*/
+
+.lista-precios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lista-precios li {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 2rem;
+}
+
+@media (min-width: 768px) {
+    .lista-precios li {
+        flex: 0 0 20%;
+    }
+}
+
+.tabla-precio {
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 4rem 0rem;
+    transition: all .3s ease;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.tabla-precio:hover {
+    transform: scale(1.1);
+    border: 1px solid #fe4918;
+    box-shadow: 0px 0px 5rem #666666;
+}
+
+.tabla-precio ul li::before {
+    content: '\f00c';
+    font-family: 'Fontawesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0.5rem;
+    font-size: 2rem;
+    color: green;
+    -webkit-font-smoothing: antialiased;
+}
+
+.tabla-precio ul li {
+    font-family: 'PT Sans';
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 2.6rem;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.tabla-precio h3 {
+    font-family: 'Oswald', sans-serif!important;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.tabla-precio p.numero {
+    color: #000000;
+    font-size: 6rem;
+    margin: 2rem;
+    padding: 0;
+    font-family: 'Oswald', sans-serif!important;
+}
+
+
+/*Mapa*/
+
+#mapa {
+    height: 42rem;
+}
+
+
+/*Testimonial*/
+
+.testimoniales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.testimonial {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 2rem;
+}
+
+@media (min-width: 768px) {
+    .testimonial {
+        flex: 0 0 25%;
+    }
+}
+
+.testimonial blockquote {
+    border: 1px solid #e1e1e1;
+    background-color: #ffffff;
+    padding: 2rem 0rem;
+    transition: all .3s ease;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial blockquote p {
+    font-family: 'PT Sans';
+    font-size: 1rem;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #868686;
+    line-height: 2.6rem;
+    padding: 0 2rem 0 6.5rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.testimonial blockquote p::before {
+    content: '\201c';
+    font-family: 'Fontawesome';
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 8rem;
+    left: 2rem;
+    top: 0rem;
+    color: #fe4918;
+    -webkit-font-smoothing: antialiased;
+}
+
+.testimonial blockquote footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial blockquote footer img {
+    max-width: 20%;
+    border-radius: 50%;
+    flex: 0 0 30%
+}
+
+.testimonial blockquote footer cite {
+    text-align: left;
+    color: #fe4918;
+    text-transform: uppercase;
+    padding: 1rem;
+    font-weight: bold;
+    font-style: normal;
+    flex: 0 0 70%
+}
+
+.testimonial blockquote footer span {
+    display: block;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+}
+
+.testimonial blockquote footer {
+    padding: 0;
+}
+
+
+/*Newsletter*/
+
+.newsletter {
+    position: relative;
+    height: auto;
+}
+
+.newsletter::before {
+    background-image: url(../img/bg-newsletter.jpg);
+    content: '';
+}
+
+.newsletter .contenido {
+    padding: 10rem 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.newsletter .contenido p {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.newsletter .contenido h3 {
+    color: white;
+    font-size: 10vh;
+}
+
+
+/*Cuenta regresiva*/
+
+.cuenta-regresiva li {
+    color: black;
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Oswald', sans-serif!important;
+    text-transform: uppercase;
+}
+
+.cuenta-regresiva li p {
+    margin: 0;
+}
+
+.numero {
+    color: #fe4918;
+    font-size: 10rem;
+    font-family: 'Oswald', sans-serif!important;
+}
+
+
+/*Footer*/
+
+.site-footer {
+    background-color: #353535;
+    padding: 2rem;
+}
+
+.site-footer .contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.footer-informacion,
+.ultimos-tweets,
+.menu {
+    flex: 0 0 100%;
+}
+
+@media (min-width: 992px) {
+    .footer-informacion,
+    .ultimos-tweets,
+    .menu {
+        flex: 0 0 calc(33.3% - 2rem);
+    }
+}
+
+.footer-informacion h3,
+.ultimos-tweets h3,
+.menu h3 {
+    font-family: 'Oswald', sans-serif!important;
+    text-transform: uppercase;
+}
+
+.footer-informacion h3 span,
+.ultimos-tweets h3 span,
+.menu h3 span {
+    color: white;
+}
+
+.footer-informacion p,
+.ultimos-tweets ul li {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.ultimos-tweets ul li {
+    padding-top: 1rem;
+}
+
+.menu .redes-sociales {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.copy-r {
+    background-color: #2e2e2e;
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+
+/*Internas*/
+
+
+/*Conferencias*/
+
+.conferencia .navegacion-principal a {
+    border: none;
+}
+
+.conferencia .navegacion-principal a:last-of-type {
+    border: 4px solid #fe4918;
+}
+
+.conferencia .navegacion-principal .activo {
+    border-bottom: 4px solid #fe4918;
+}
+
+.galeria a {
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+
+/*Registro*/
+
+.registro h3 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem 0 0 0;
+}
+
+.registro label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h4 {
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fe4918;
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.caja {
+    background-color: white;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.campo {
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .campo {
+        float: left;
+        width: 33.3%;
+    }
+}
+
+.paquetes .tabla-precio:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.paquetes .tabla-precio .input {
+    clear: both;
+    width: 10rem;
+    margin: 1rem auto 0 auto;
+    display: block;
+}
+
+.contenido-dia {
+    padding: 2rem;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .contenido-dia>div {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+.contenido-dia p {
+    text-align: left;
+}
+
+.contenido-dia label {
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.contenido-dia>div input {
+    margin-right: 1rem;
+}
+
+.contenido-dia>div label time {
+    color: #fe4918;
+    font-weight: bold;
+}
+
+#viernes,
+#sabado,
+#domingo {
+    display: none;
+}
+
+
+/*Resumen registro */
+
+.resumen p {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.resumen .extras {
+    float: left;
+    width: 50%;
+    padding: 3rem;
+}
+
+.extras .orden {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.extras .orden input {
+    margin: 1rem 0 0 0;
+}
+
+.resumen .total {
+    float: right;
+    width: 50%;
+    padding: 3rem;
+}
+
+.resumen input {
+    display: block;
+    margin-top: 1rem auto;
+}
+
+.extras label,
+.total label {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.campo label {
+    text-align: center;
+}
+
+.orden input,
+.orden select,
+.campo input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #fe4918;
+    margin-top: 1rem;
+    min-width: 95%;
+    text-align: center;
+}
+
+#lista-productos {
+    background-color: #e1e1e1;
+    padding: 2rem;
+    display: none;
+}
+
+#suma-total {
+    color: #fe4918;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+/*Calendario*/
+
+.calendario {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendario h3 {
+    flex: 0 0 100%;
+    padding: 1.5rem;
+    background-color: #fe4918;
+    color: white;
+    text-align: center;
+}
+
+.calendario .dia {
+    padding: 1rem;
+    flex: 0 0 50%;
+    border: 1px solid #e1e1e1;
+}
+
+@media (min-width: 768px) {
+    .calendario .dia {
+        flex: 0 0 33.3%;
+    }
+}
+
+.calendario .dia:hover {
+    transition: all .3s ease;
+    -webkit-transform: scale(1.1);
+    background-color: #e1e1e1;
+}
+
+.dia .titulo {
+    color: #fe4918;
+    font-weight: bold;
+}
+
+.dia i {
+    color: #fe4918;
+}
+
+
+/*Colorbox*/
+
+.modal-invitados {
+    padding: 3rem!important;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.modal-invitados img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #fe4918;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
